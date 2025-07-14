@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --background: #EEEDE9;
+}
+
+
+@theme inline {
+  --font-primary: var(--font-headers);
+  --font-body: var(--font-bodies);
+
+  --color-background: var(--background);
+  --color-primary-text: hsl(107, 20%, 31%);
+  --color-primary-text-hover: hsl(107, 18%, 41%);
+  --color-primary-text-light: hsl(112, 12%, 51%);
+  --color-secondary-text: hsl(12, 53%, 46%);
+  --color-tertiary-text: hsl(27, 83%, 56%)
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
