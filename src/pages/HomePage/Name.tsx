@@ -11,7 +11,7 @@ const Name: FunctionComponent = () => {
         translate-y-[16px]
         "
       >
-      Hi there, I'm
+      {`Hi there, I'm`}
     </div>
     <div
       className="
