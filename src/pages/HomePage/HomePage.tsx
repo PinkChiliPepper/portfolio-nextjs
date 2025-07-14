@@ -20,14 +20,21 @@ const HomePage: FunctionComponent = () => {
               <BodyText>
                 {`I love working on creative projects — outside of work that means drawing, painting, sculpting,
                 or whatever catches my interest. At work, I enjoy building scalable, reusable solutions, and
-                I have a strong interest in UI and UX as well. I'm a fuall-stack developer and I love every part
-                of my job, but I definitely have a soft spot for frontend development.`}
+                I have a strong interest in UI and UX as well. I definitely have a soft spot for frontend development.`}
               </BodyText>
             </TitleBox>
             <TitleBox title="Stack">
-              <BodyText>
-                TODO
-              </BodyText>
+              <div>
+                <BodyText>
+                  <span className="text-primary-text-light pr-1">Frontend:</span> Next.js (TypeScript), React Hook Form, TanStack Query, Redux Toolkit, Material UI
+                </BodyText>
+                <BodyText>
+                  <span className="text-primary-text-light pr-1">Backend:</span> Django, Django Tastypie, Django unittest
+                </BodyText>
+                <BodyText>
+                  <span className="text-primary-text-light pr-1">Integratie tests:</span> behave, selenium
+                </BodyText>
+              </div>
             </TitleBox   >
           </div>
         </div>

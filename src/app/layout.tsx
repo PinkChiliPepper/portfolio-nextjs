@@ -6,7 +6,6 @@ import "./globals.css";
 const bodyFont = Roboto({
   variable: "--font-bodies",
   subsets: ["latin"],
-  weight: ['400'],
 });
 
 const headerFont = Rubik({
