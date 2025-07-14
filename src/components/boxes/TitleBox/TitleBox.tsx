@@ -9,7 +9,7 @@ interface Props {
 
 const TitleBox: FunctionComponent<Props> = ({ children, title }) => {
   return (
-    <Box className='flex flex-col gap-2'>
+    <Box className='flex flex-col gap-6'>
       <HeaderText className='
       text-primary-text-light
       text-center
