@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const OUTPUT = 'export'
 
 const nextConfig: NextConfig = {
-  basePath: "/portfolio-nextjs",
+  basePath: process.env.BASE_PATH,
   output: "export",
   reactStrictMode: true,
   images: { unoptimized: OUTPUT === 'export' ? true : false },

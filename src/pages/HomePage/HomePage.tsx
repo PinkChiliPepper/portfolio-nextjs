@@ -1,5 +1,5 @@
 import TitleBox from "@/components/boxes/TitleBox";
-import Image from "@/components/images/Image";
+import RoundImage from "@/components/images/RoundImage/RoundImage";
 import BodyText from "@/components/text/BodyText";
 import Name from "@/pages/HomePage/Name";
 import { FunctionComponent } from "react";
@@ -23,8 +23,8 @@ const HomePage: FunctionComponent = () => {
     <div className="flex flex-col gap-12">
       <Name />
       <div className='flex flex-row gap-12'>
-        <div className='flex-1/2'>
-          <div className='flex flex-col gap-12'>
+        <div className='flex flex-2'>
+          <div className='flex flex-col gap-12 flex-3'>
 
             <TitleBox title="About me">
               <BodyText>
@@ -55,9 +55,10 @@ const HomePage: FunctionComponent = () => {
             </TitleBox >
 
           </div>
+          <div className='flex-1' />
         </div>
-        <div className='flex-1/2'>
-          <Image imageName="me_with_duck.jpg" alt="Me with a duck" />
+        <div className='flex-1'>
+          <RoundImage imageName="me_with_duck.jpg" alt="Me with a duck" height="400" width="400" />
         </div>
       </div>
     </div>

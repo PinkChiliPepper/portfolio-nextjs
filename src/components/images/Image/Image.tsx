@@ -1,14 +1,14 @@
 import NextImage from "next/image";
 import { FunctionComponent } from "react";
 
-interface Props {
+export interface ImageProps {
   imageName: string,
   alt: string,
 }
 
-const Image: FunctionComponent<Props> = ({ imageName, alt, ...rest }) => {
+const Image: FunctionComponent<ImageProps> = ({ imageName, alt, ...rest }) => {
   return (
-    <NextImage src={`/images/${imageName}`}
+    <NextImage src={`${process.env.BASE_PATH}/images/${imageName}`}
       alt={alt}
       width="200"
       height="200"
