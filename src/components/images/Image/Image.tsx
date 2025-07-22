@@ -10,8 +10,9 @@ const Image: FunctionComponent<ImageProps> = ({ imageName, alt, ...rest }) => {
     <NextImage
       src={`${process.env.BASE_PATH}/images/${imageName}`}
       alt={alt}
-      width="200"
-      height="200"
+      width={0}
+      height={0}
+      style={{ width: '100%', height: 'auto' }}
       {...rest}
     />
   )
