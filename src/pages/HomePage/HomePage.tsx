@@ -58,9 +58,11 @@ const HomePage: FunctionComponent = () => {
           <div className='flex-1' />
         </div>
         <div className='flex-1'>
-          <div style={{ maxWidth: '500px' }}>
-            <RoundImage imageName="me_with_duck.jpg" alt="Me with a duck" />
-          </div>
+          <RoundImage
+            imageName="me_with_duck.jpg"
+            alt="Me with a duck"
+            circleWidth="650px"
+          />
         </div>
       </div>
     </div>
