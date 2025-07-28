@@ -7,7 +7,7 @@ interface Props {
 
 const Box: FunctionComponent<Props> = ({ children, className }) => {
   return (
-    <div className={`p-8 border-2 border-primary-text-light bg-white rounded-3xl ${className}`}>
+    <div style={{ width: '100%' }} className={`p-8 border-2 border-primary-text-light bg-white rounded-3xl ${className}`}>
       {children}
     </div>
   )
