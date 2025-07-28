@@ -1,15 +1,16 @@
 import TitleBox from "@/components/boxes/TitleBox";
 import RoundImage from "@/components/images/RoundImage";
-import BodyText from "@/components/text/BodyText";
-import { FunctionComponent } from "react";
+import { FunctionComponent, ReactNode } from "react";
 
 interface Props {
+  children: ReactNode,
   name: string,
   place: string,
   moment: string,
+  imageName?: string,
 }
 
-const EducationBlock: FunctionComponent<Props> = ({ name, place, moment }) => {
+const EducationBlock: FunctionComponent<Props> = ({ children, name, place, moment, imageName }) => {
   return (
     <div style={{
       display: 'flex',
@@ -19,17 +20,15 @@ const EducationBlock: FunctionComponent<Props> = ({ name, place, moment }) => {
       gap: '2rem',
     }}>
       <TitleBox title={name} subtitle={`${place}, ${moment}`} >
-        <BodyText>
-          {`TODO`}
-        </BodyText>
+        {children}
       </TitleBox>
-      <div style={{ margin: '2rem' }}>
+      {imageName && (<div style={{ margin: '2rem' }}>
         <RoundImage
-          imageName="todo.jpg"
+          imageName={imageName}
           alt="Me with a duck"
           circleWidth="400px"
         />
-      </div>
+      </div>)}
     </div>
   )
 }
