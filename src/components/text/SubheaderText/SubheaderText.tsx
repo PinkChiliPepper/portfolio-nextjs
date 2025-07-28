@@ -5,13 +5,13 @@ interface Props {
   className?: string,
 }
 
-const HeaderText: FunctionComponent<Props> = ({ children, className }) => {
+const SubheaderText: FunctionComponent<Props> = ({ children, className }) => {
   return (
     <div
       className={`
-          text-primary-text
+          text-secondary-text
           font-primary
-          text-[1.75rem]
+          text-[1.1rem]
           font-bold
           ${className}
           `}
@@ -21,4 +21,4 @@ const HeaderText: FunctionComponent<Props> = ({ children, className }) => {
   )
 }
 
-export default HeaderText
+export default SubheaderText
